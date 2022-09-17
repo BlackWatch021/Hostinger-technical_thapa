@@ -19,17 +19,17 @@
 /* First 3 balls */
 
 .bck_balls:nth-child(1){
-    width:1600px;
-    height: 1600px;
+    /* width:1600px; */
+    /* height: 1600px; */
     background-color: rgb(242, 74, 242);
-    animation: ball1 .5s ease-out .6s 1 forwards;
+    /* animation: ball1 .5s ease-out .6s 1 forwards; */
     z-index: 3;
 }
 .bck_balls:nth-child(2){
-    width:1600px;
-    height: 1600px;
+    /* width:1600px; */
+    /* height: 1600px; */
     background-color: rgb(208, 7, 7);
-    animation: ball1 .5s ease-out .3s forwards;
+    /* animation: ball1 .5s ease-out .3s forwards; */
     z-index: 3;
 }
 .bck_balls:nth-child(3){
@@ -53,7 +53,7 @@
     background-color: rgb(242, 74, 242);
     z-index: 1;
     box-shadow: inset 5px 5px 15px 2px rgb(84, 34, 84),inset -3px -3px 8px 0px whitesmoke, 1px 1px 20px 1px rgb(245, 106, 245),0px 0px 200px rgb(254, 224, 224);
-    animation: ballDrop3 2.8s ease-in-out .9s 1 forwards;
+    animation: ballDrop3 2.8s ease-in-out .3s 1 forwards;
 }
 .bck_balls:nth-child(5){
     width:60px;
@@ -63,7 +63,7 @@
     background-color: rgb(208, 7, 7);
     box-shadow: inset -5px 5px 12px 0px rgb(106, 9, 9),inset 3px -3px 8px 0px whitesmoke, 0px 0px 7px rgb(228, 54, 54),0px 0px 100px rgb(246, 181, 181);
     z-index: 1;
-    animation: ballDrop2 2.8s ease-in-out 1.8s 1 forwards;
+    animation: ballDrop2 2.8s ease-in-out 1.2s 1 forwards;
 }
 .bck_balls:nth-child(6){
     width:80px;
@@ -73,7 +73,7 @@
     background-color: rgb(13, 226, 226);
     box-shadow: inset -5px 5px 10px 2px rgb(9, 130, 130),inset 5px -5px 10px 0px whitesmoke, 0px 0px 15px aqua,0px 0px 100px rgb(241, 231, 231);
     z-index: 1;
-    animation: ballDrop1 2.8s ease-in-out 1.3s 1 forwards;
+    animation: ballDrop1 2.8s ease-in-out .7s 1 forwards;
 }
 
 /* Last 3 balls */
@@ -242,10 +242,17 @@
     font-size: 1.3rem;
     word-spacing: 5px;
     border-radius: 30px;
-    margin: 20px 0px;
+    border: none;
+    margin: 10px 0px;
     font-weight: 600;
-    background-color: purple;
+    background-color: rgb(74, 252, 205);
+    box-shadow: 0px 0px 7px 0px rgb(74, 252, 205);
     cursor: pointer;
+    transition: all .2s linear;
+}
+
+.banner_btn:hover{
+    box-shadow: 0px 0px 20px 0px rgb(74, 252, 205),0px 0px 50px 0px rgb(113, 251, 214);
 }
 
 /* Button */
