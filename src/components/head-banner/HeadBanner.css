@@ -1,0 +1,251 @@
+.headBanner{
+    background-color: pink;
+    width: 100vw;
+    height: 85vh;
+    background:linear-gradient(to bottom, black , #212121);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bck_balls{
+    position: absolute;
+    border-radius: 50%;
+}
+
+/* First 3 balls */
+
+.bck_balls:nth-child(1){
+    width:1600px;
+    height: 1600px;
+    background-color: rgb(242, 74, 242);
+    animation: ball1 .5s ease-out .6s 1 forwards;
+    z-index: 3;
+}
+.bck_balls:nth-child(2){
+    width:1600px;
+    height: 1600px;
+    background-color: rgb(208, 7, 7);
+    animation: ball1 .5s ease-out .3s forwards;
+    z-index: 3;
+}
+.bck_balls:nth-child(3){
+    width:1600px;
+    height: 1600px;
+    
+    background-color: aqua;
+    animation: ball1 .5s ease-out forwards;
+    z-index: 3;
+}
+/* First 3 balls */
+
+
+/* Last 3 balls */
+
+.bck_balls:nth-child(4){
+    width:120px;
+    height: 120px;
+    top: -140px;
+    left: 30%;
+    background-color: rgb(242, 74, 242);
+    z-index: 1;
+    box-shadow: inset 5px 5px 15px 2px rgb(84, 34, 84),inset -3px -3px 8px 0px whitesmoke, 1px 1px 20px 1px rgb(245, 106, 245),0px 0px 200px rgb(254, 224, 224);
+    animation: ballDrop3 2.8s ease-in-out .9s 1 forwards;
+}
+.bck_balls:nth-child(5){
+    width:60px;
+    height: 60px;
+    top: -80px;
+    right: 40%;
+    background-color: rgb(208, 7, 7);
+    box-shadow: inset -5px 5px 12px 0px rgb(106, 9, 9),inset 3px -3px 8px 0px whitesmoke, 0px 0px 7px rgb(228, 54, 54),0px 0px 100px rgb(246, 181, 181);
+    z-index: 1;
+    animation: ballDrop2 2.8s ease-in-out 1.8s 1 forwards;
+}
+.bck_balls:nth-child(6){
+    width:80px;
+    height: 80px;
+    top: -100px;
+    right: 30%;
+    background-color: rgb(13, 226, 226);
+    box-shadow: inset -5px 5px 10px 2px rgb(9, 130, 130),inset 5px -5px 10px 0px whitesmoke, 0px 0px 15px aqua,0px 0px 100px rgb(241, 231, 231);
+    z-index: 1;
+    animation: ballDrop1 2.8s ease-in-out 1.3s 1 forwards;
+}
+
+/* Last 3 balls */
+
+
+
+
+/* Animation */
+
+@keyframes ballDrop3{
+    0%{
+    }
+    40%{
+        width:120px;
+        height: 120px;
+    }
+    50%{
+        top:60%;
+        width:125px;
+        height: 110px;
+    }
+    55%{
+        width:120px;
+        height: 120px;
+    }
+    80%{
+        top: 170px;
+    }
+    92%{
+        top:190px
+    }
+    100%{
+        top: 180px;
+    }
+}
+
+@keyframes ballDrop2{
+    0%{
+    }
+    40%{
+        width:60px;
+        height: 60px;
+    }
+    50%{
+        top:75%;
+        width:70px;
+        height: 50px;
+    }
+    55%{
+        width:60px;
+        height: 60px;
+    }
+    80%{
+        top: 100px;
+    }
+    /* 92%{
+        top:
+    } */
+    100%{
+        top: 110px;
+    }
+}
+
+@keyframes ballDrop1{
+    0%{
+    }
+    40%{
+        width:80px;
+        height: 80px;
+    }
+    50%{
+        top:60%;
+        width:90px;
+        height: 70px;
+    }
+    55%{
+        width:80px;
+        height: 80px;
+    }
+    80%{
+        top: 40%;
+    }
+    92%{
+        top:42%
+    }
+    100%{
+        top: 39%;
+    }
+}
+
+@keyframes ball1 {
+    0%{
+    }
+    
+    100%{
+        width: 0px;
+        height: 0px;
+    }
+    
+}
+
+
+/* Animation */
+
+
+/*Main content*/
+
+
+.headBanner_container{
+    position: relative;
+    width: 60vw;
+    min-height: 70%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 1px solid white;
+    box-shadow: 0px 1px 5px 0px white;
+    text-align: center;
+    z-index: 2;
+}
+
+
+.price{
+    font-size: 4rem;
+}
+.headBanner_timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.timers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-size: 1.4rem;
+    margin:0px 10px;
+    border-radius: 5px;
+    font-family: Muli,sans-serif;
+    color: black;
+}
+
+.timers_containers>p{
+    font-size: .8rem;
+}
+
+
+
+
+/*Main content*/
+
+/* Button */
+
+.banner_btn{
+    width: 150px;
+    height: 50px;
+    font-size: 1.3rem;
+    word-spacing: 5px;
+    border-radius: 30px;
+    margin: 20px 0px;
+    font-weight: 600;
+    background-color: purple;
+    cursor: pointer;
+}
+
+/* Button */
