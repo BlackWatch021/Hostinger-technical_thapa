@@ -1,0 +1,161 @@
+.plans_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(to bottom, #673de6, #212121 20%);
+}
+.plans_container > h1 {
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.plans_wrapper {
+  width: 75vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 80px 0px;
+  perspective: 20000;
+}
+
+.plan_details {
+  width: 320px;
+  padding: 0px 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: #673de6 1px solid;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 0px 30px rgb(242, 74, 242);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.plan_details:nth-child(2) {
+  box-shadow: inset 0px 0px 30px aqua;
+}
+
+.plan_details:hover {
+  box-shadow: inset 0px 0px 40px;
+  transform: scale(1.023);
+}
+
+.basic_info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.basic_info > h2 {
+  font-weight: 200;
+  margin-top: 30px;
+  margin-bottom: -1px;
+}
+.description {
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount > p {
+  text-decoration: line-through;
+  color: rgb(157, 156, 156);
+  margin-right: 10px;
+}
+
+.discount > button {
+  border-radius: 20px;
+  width: 90px;
+  height: 35px;
+  background-color: #38d7c599;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 7px #59fce999;
+}
+
+.btn {
+  border-radius: 20px;
+  width: 100%;
+  height: 35px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #5effed;
+  cursor: pointer;
+  transition: all 0.1s linear;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 7px #83fcee, 0px 0px 10px #90e8de;
+}
+
+.renew {
+  color: rgb(157, 156, 156);
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.plans_features {
+}
+
+.show_more {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: aqua 0.5px solid;
+}
+
+.basic_info > h4 {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.plans_pricing {
+  font-size: 38px;
+  font-weight: 500;
+  font-weight: 800;
+}
+
+.basic_info > p > sup,
+.basic_info > p > sub {
+  font-size: 18px;
+}
+
+.features_heading {
+  font-weight: 300;
+  font-size: 20px !important;
+  text-decoration: underline;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.plans_features > p {
+  line-height: 18px;
+  font-size: 14px;
+  display: flex;
+  margin-left: 5px;
+}
+
+.check_img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+b {
+  margin-right: 7px;
+}
