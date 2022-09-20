@@ -24,7 +24,7 @@
 
 .plan_details {
   width: 320px;
-  padding: 0px 10px;
+  padding: 0px 20px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -112,14 +112,6 @@
 .plans_features {
 }
 
-.show_more {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: aqua 0.5px solid;
-}
-
 .basic_info > h4 {
   font-size: 18px;
   font-weight: 200;
@@ -158,4 +150,23 @@
 
 b {
   margin-right: 7px;
+}
+
+.show_more {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  border-top: aqua 0.5px solid;
+  transition: all 0.1s linear;
+}
+
+.show_more > h3 {
+  cursor: pointer;
+  border-bottom: 0.5px solid transparent;
+}
+.show_more > h3:hover {
+  /* text-decoration: underline; */
+  border-bottom: 0.5px solid white;
 }
