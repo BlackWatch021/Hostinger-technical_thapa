@@ -7,6 +7,7 @@
   align-items: center;
   width: 100%;
   background: linear-gradient(to bottom, #673de6, #212121 20%);
+  cursor: default;
 }
 .plans_container > h1 {
   margin-top: 50px;
@@ -26,6 +27,7 @@
   width: 320px;
   padding: 0px 20px;
   height: auto;
+  /* height: 870px; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -110,6 +112,8 @@
 }
 
 .plans_features {
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .basic_info > h4 {

@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Plans.css";
 import check from "../../images/check.png";
 import cross from "../../images/cross.png";
 
 const Plans = () => {
+  // let increaseHeight = false;
+
+  let [styleToApply, setStyleToApply] = useState({ height: "680px" });
+  let [plansHeight, setPlansHeight] = useState(false);
+
+  let classes = "plan_details";
+  const expand = () => {
+    if (plansHeight === false) {
+      setPlansHeight(true);
+      setStyleToApply({});
+    } else {
+      setPlansHeight(false);
+      setStyleToApply({ height: "680px" });
+    }
+  };
+
   return (
     <div className="plans_container">
       {/* <img src={check}></img>
@@ -31,7 +47,7 @@ const Plans = () => {
             <p className="renew">₹159.00/mo when you renew</p>
           </div>
 
-          <div className="plans_features">
+          <div className="plans_features" style={styleToApply}>
             <h6 className="features_heading">Top feature comparison</h6>
             <p>
               <b>1</b> Websites
@@ -134,7 +150,9 @@ const Plans = () => {
           </div>
 
           <div className="show_more">
-            <h3>See more features</h3>
+            <h3 onClick={expand}>
+              {plansHeight ? "See less features" : "See more features"}
+            </h3>
           </div>
         </div>
 
@@ -159,7 +177,7 @@ const Plans = () => {
             <p className="renew">₹249.00/mo when you renew</p>
           </div>
 
-          <div className="plans_features">
+          <div className="plans_features" style={styleToApply}>
             <h6 className="features_heading">Top feature comparison</h6>
             <p>
               <b>100</b> Websites
@@ -262,12 +280,14 @@ const Plans = () => {
           </div>
 
           <div className="show_more">
-            <h3>See more features</h3>
+            <h3 onClick={expand}>
+              {plansHeight ? "See less features" : "See more features"}
+            </h3>
           </div>
         </div>
 
         {/* Card 3 */}
-        <div className="plan_details">
+        <div className={classes}>
           <div className="basic_info">
             <h2>Business Web Hosting</h2>
             <p className="description">
@@ -289,7 +309,7 @@ const Plans = () => {
             <p className="renew">₹499.00/mo when you renew</p>
           </div>
 
-          <div className="plans_features">
+          <div className="plans_features" style={styleToApply}>
             <h6 className="features_heading">Top feature comparison</h6>
             <p>
               <b>100</b> Websites
@@ -392,7 +412,9 @@ const Plans = () => {
           </div>
 
           <div className="show_more">
-            <h3>See more features</h3>
+            <h3 onClick={expand}>
+              {plansHeight ? "See less features" : "See more features"}
+            </h3>
           </div>
         </div>
       </div>
