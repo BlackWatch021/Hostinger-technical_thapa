@@ -1,4 +1,4 @@
-Due to some issues, I recommend you to use "npm i --force" initially.
+# Due to some issues, I recommend you to use "npm i --force" initially.
 
 # Getting Started with Create React App
 
