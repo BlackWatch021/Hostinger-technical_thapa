@@ -13,11 +13,13 @@
 .additional_container > h1 {
   color: blueviolet;
   font-size: 3rem;
+  text-align: center;
 }
 .additional_wrapper {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   /* border: 2px solid white; */
   /* background-color: pink; */
   padding: 20px;
@@ -48,4 +50,16 @@
   font-size: 14px;
   font-weight: 300;
   word-spacing: 2px;
+}
+
+@media (max-width: 1100px) {
+  .additionla_boxes {
+    width: 350px;
+  }
+}
+
+@media (max-width: 700px) {
+  .additional_container > h1 {
+    font-size: 2rem;
+  }
 }

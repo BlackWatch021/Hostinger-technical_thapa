@@ -15,12 +15,14 @@
   color: blueviolet;
   border-bottom: 1px solid rgb(157, 88, 222);
   font-size: 3rem;
+  text-align: center;
 }
 
 .return_container > p {
   margin: -20px 0px 50px 0px;
   font-size: 14px;
   color: rgb(157, 156, 156);
+  text-align: center;
 }
 
 .return_container > button {
@@ -50,4 +52,11 @@
   color: white;
   cursor: pointer;
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .return_container > h1 {
+    border-bottom: none;
+    font-size: 2rem;
+  }
 }

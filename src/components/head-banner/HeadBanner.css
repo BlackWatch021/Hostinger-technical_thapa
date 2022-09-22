@@ -1,5 +1,4 @@
 .headBanner {
-  background-color: pink;
   width: 100vw;
   height: 90vh;
   background: linear-gradient(to bottom, black 60%, #673de6);
@@ -10,6 +9,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .bck_balls {

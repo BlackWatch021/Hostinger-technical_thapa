@@ -12,6 +12,7 @@
 .plans_container > h1 {
   margin-top: 50px;
   font-weight: 400;
+  text-align: center;
 }
 
 .plans_wrapper {
