@@ -1,3 +1,5 @@
+Due to some issues, I recommend you to use "npm i --force" initially.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
